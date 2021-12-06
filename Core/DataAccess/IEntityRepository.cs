@@ -8,8 +8,8 @@ namespace Core.DataAccess
 {
     //generic constraint
     //class : referans tip olabilir.
-    //IEntity : IEntity veya IEntity implemente eden bir nesne olabilir.
-    //new() : new'lenebilir olmalıdır.(Yani IEntity new'lenemyeceginden artik cagrilamaz sadece nesneler cagrilir.)
+    //IEntity : IEntity olabilir veya IEntity implemente eden bir nesne olabilir.
+    //new() : new'lenebilir olmalıdır.(Yani IEntity new'lenemeyeceginden artik cagrilamaz sadece nesneler cagrilir.)
     public interface IEntityRepository<T> where T:class, IEntity, new() 
     {
         //tabloların tutulduğu Repodur. 

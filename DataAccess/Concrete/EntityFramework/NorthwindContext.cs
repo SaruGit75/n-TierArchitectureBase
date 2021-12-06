@@ -18,7 +18,7 @@ namespace DataAccess.Concrete.EntityFramework
         }
 
         public DbSet<Product> Products { get; set; }
-        //Hangi class hangi tabloya denk geliyor bunu belirledik.
+        //Hangi class hangi tabloya denk geliyor bunu belirledik. Ornegin Product nesnesini Products tablosuna baglamasini soyledik.
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
